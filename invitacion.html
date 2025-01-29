@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Invitación</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/invitacion.css">
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100 flex-column">
+
+    <div class="invitacion text-center">
+        <h2>¿Quieres salir conmigo el sábado? 💖</h2>
+        
+        <div class="botones d-flex justify-content-center gap-3 mt-4">
+            <button type="button" class="btn-si btn-lg" id="btnSi">¡Sí, claro! 🥰</button>
+            <button type="button" class="btn-no btn-lg" id="btnNo">No :(</button>
+        </div>
+    </div>
+
+    <!-- Botón de volver fuera del recuadro -->
+    <div class="volver mt-4">
+        <a href="index.html">
+            <button class="btn-invitacion">¿Quieres volver? Presiona este botón 💌</button>
+        </a>
+    </div>
+
+    <script>
+        // Función para mover el botón "No" cuando el ratón pasa por encima
+        document.getElementById("btnNo").addEventListener("mouseover", function() {
+            let x = Math.random() * (window.innerWidth - 100);
+            let y = Math.random() * (window.innerHeight - 50);
+            this.style.position = "absolute";
+            this.style.left = x + "px";
+            this.style.top = y + "px";
+        });
+
+        // Mostrar una alarma cuando se haga clic en el botón "Sí, claro!"
+        document.getElementById("btnSi").addEventListener("click", function() {
+            alert("¡yupiiii, que emocióoonnnn! 🥰");
+        });
+    </script>
+
+</body>
+</html>

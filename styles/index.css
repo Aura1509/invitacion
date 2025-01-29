@@ -1,0 +1,58 @@
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.carousel {
+    max-width: 800px;
+    /* Ancho máximo del carrusel */
+}
+
+.carousel-inner img {
+    max-width: 1000px;
+    /* Ancho máximo de la imagen */
+    max-height: 800px;
+    /* Alto máximo de la imagen */
+    margin: auto;
+    object-fit: cover;
+    /* Ajusta la imagen sin distorsión */
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(243, 236, 245);
+    text-shadow: 3px 3px 6px rgba(34, 6, 59, 0.5);
+    margin-bottom: 20px;
+}
+
+h2,
+h4 {
+    text-shadow:4px 4px 7px rgba(0, 0, 0, 0.8);
+}
+
+
+.btn-invitacion {
+    margin-top: 10px;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #bda3fa;
+    border: 2px solid #bda3fa;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-invitacion:hover {
+    background-color: #9d90bb;
+    transform: scale(1.1);
+    border: 2px solid #9d90bb;
+}

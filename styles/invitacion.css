@@ -38,7 +38,7 @@ body {
     background: #bda3fa;
     color: white;
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .btn-si:hover {
@@ -49,12 +49,13 @@ body {
     background: #ddd;
     color: black;
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .btn-invitacion {
     margin-top: 10px;
-    font-size: 30px;
+    font-size: 20px;
+    color: black;
     padding: 10px;
     border-radius: 20px;
     background-color: #bda3fa;
